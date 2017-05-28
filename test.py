@@ -33,8 +33,8 @@ def get_blance(us):
 def get_back(balance, inputs, outputs, fee):
     txin_num = len(inputs)
     txout_num = len(outputs) + 1
-    ###计算fee
-    tx_bytes = (4 + 4 + 1 + 1 + txin_num * (106 + 32 + 4 + 4 + 1) + txout_num * (25 + 8 + 1))
+    ###计算fee    10 + in * 148 + out * 34
+    tx_bytes = (4 + 4 + 1 + 1 + txin_num * (106 + 32 + 4 + 4 + 1 + 1) + txout_num * (25 + 8 + 1))
     print tx_bytes
     all_fee = tx_bytes / 1024.0 * fee
     back = balance - amount - numto8(all_fee)
