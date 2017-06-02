@@ -17,7 +17,8 @@ SelectParams('testnet')
 
 # CMutableTxIn list
 def create_txin(amounts):
-    us_list,blc = walletinfo.get_txin(amounts)
+    us_list, blc = walletinfo.get_txin(amounts)
+
     txin = []
     for us in us_list:
         txin.append(CMutableTxIn(COutPoint(lx(us.txid), us.vout)))
@@ -39,7 +40,7 @@ def create_txout(ads_amt):
 # Create the unsigned transaction.   txin---》list
 def create_tx(txin, txout):
     tx = CMutableTransaction(txin, txout)
-    print('tx-length: ', len(tx.serialize()) / 2)
+    # print('tx-length: ', len(tx.serialize()) / 2)
     return tx
 
 
@@ -66,7 +67,7 @@ def sign_tx(txin, tx):
 if __name__ == "__main__":
     to_address = 'mt75PpVcfjceTcCn1C8qgJr4ext2F31udd'
     ads_amt = dict()
-    ads_amt.setdefault(to_address, 1.23)
+    ads_amt.setdefault(to_address, 3.23)
     ads_amt.setdefault('miEJxBRNmpVVrybtvsLwxeCxcmypdXQYDD', 0.1)
     # 发送总额
     amounts = 0
@@ -82,23 +83,24 @@ if __name__ == "__main__":
     # 查看是否需要找零
     back = walletinfo.get_back(blc, txin, ads_amt)
     if back:
-        a = walletinfo.get_address()   ###back　to who???
+        a = walletinfo.get_address()   # back　to who???
         ads_amt.setdefault(a, back)
     print(ads_amt)
 
     # {address:amount}   创建输出
     txout = create_txout(ads_amt)
 
-    #创建交易
+    # 创建交易
     tx = create_tx(txin, txout)
-    print('txsize : ', len(b2x(tx.serialize()))/2)   #未签名的交易大小
-    #sign
-    tx_hex = sign_tx(txin, tx)     #tx hex   106*x
+    print('txsize : ', len(b2x(tx.serialize()))/2)   # 未签名的交易大小  235  ---> 238
 
-    # fee =
-    print(len(tx_hex)/2)
+    # sign
+    tx_hex = sign_tx(txin, tx)     # tx hex   106*x    3*106=318   318+235=553
+
+    # fee
+    print(len(tx_hex)/2)     # 费用比这里高  1-2 satoshi   554 + 2 = 556 = 3*106 + 238
     #send
-    # print(walletinfo.send_tx(tx_hex))   #txid
+    print(walletinfo.send_tx(tx_hex))   # txid
 
 
 

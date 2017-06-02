@@ -39,12 +39,12 @@ class Unspent(object):
 
 # get proper txin
 def get_txin(amounts):
-    lus = rpc_connection.listunspent(1, 9999999)
+    lus = rpc_connection.listunspent()
     balance = 0
     for i in lus:
         balance += i['amount']
     if balance < amounts:
-        return None
+        raise ValueError('out of balance!')
     else:
         us = [Unspent(i['txid'], i['vout'], i['address'], i['amount']) for i in lus]
         #from small -->
@@ -66,7 +66,7 @@ def get_back(balance, inputs, outputs, fee = 0.00001):
     ###计算fee   148   34
     tx_bytes = (4 + 4 + 1 + 1 + txin_num * (106 + 32 + 4 + 4 + 1 + 1) + txout_num * (25 + 8 + 1))
     all_fee = tx_bytes / 1000.0 * fee
-    print('allfee :',numto8(all_fee))
+    print('allfee :', numto8(all_fee))
     back = balance - numto8(all_fee)
     bk = back - numto8(34/1000.0*fee)
     if bk > 0:
@@ -87,7 +87,7 @@ def get_address():
     return rpc_connection.getnewaddress()
 
 def get_us():
-    return rpc_connection.listunspent(1, 9999999)
+    return rpc_connection.listunspent()
 def send_tx(hex):
     # tx hash in hex
     return rpc_connection.sendrawtransaction(hex)
