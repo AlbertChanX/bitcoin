@@ -7,7 +7,7 @@ import numpy as np
 
 
 def get_kline(type, symbol='ltc_cny'):
-    url = 'https://www.okcoin.cn/api/v1/kline.do?symbol=%s&type=%s' % (symbol, type)
+    url = 'https://www.okcoin.cn/api/v1/kline.do?size=60&symbol=%s&type=%s' % (symbol, type)
     print(url)
     js = requests.get(url).json()
     return js
