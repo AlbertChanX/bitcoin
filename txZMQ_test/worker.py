@@ -1,7 +1,5 @@
 # coding:utf-8
 from txzmq import ZmqEndpoint, ZmqFactory, ZmqPubConnection, ZmqRouterConnection, ZmqREPConnection, ZmqDealerConnection
-import zmq
-import time
 from twisted.internet import reactor
 
 
