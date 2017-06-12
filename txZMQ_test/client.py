@@ -17,8 +17,8 @@ def produce():
     try:
         d = s.sendMsg(data, timeout=0.95)
 
-        def doPrint(reply):    # else reply
-            print("Got reply: %s" % (reply))   # ???
+        def doPrint(reply):    # else reply -->list
+            print("Got reply: %s" % (reply[0]))   # ???
 
         def onTimeout(fail):   # except
             fail.trap(ZmqRequestTimeoutError)
@@ -28,7 +28,7 @@ def produce():
     except zmq.error.Again:
         print "Skipping, no consumers..."
 
-    reactor.callLater(1, produce)
+    reactor.callLater(1, produce)    # callLater(1,produce,args)  args --> produce
 
 reactor.callWhenRunning(reactor.callLater, 1, produce)
 
