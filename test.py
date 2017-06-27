@@ -62,7 +62,7 @@ def send_btc(address, amount, fee):
     outputs.setdefault(address, amount)
 
     back = get_back(balance, inputs, outputs, fee)
-    logging.critical('back %.8f'%back)
+    logging.critical('back %.8f' %back)
     # 设置找零
     outputs.setdefault(us[0]['address'], back)
     logging.critical('outputs is %s'%outputs)
@@ -90,8 +90,6 @@ def send_btc(address, amount, fee):
 # decoderawtransaction   -->  inputs,outputs
 # decode = rpc_connection.decoderawtransaction(hex)
 # print decode
-
-
 
 
 if __name__ == '__main__':

@@ -37,7 +37,7 @@ class ZmqFactory(object):
         Create ZeroMQ context.
         """
         self.connections = set()
-        self.context = Context(self.ioThreads)
+        self.context = Context()
 
     def __repr__(self):
         return "ZmqFactory()"

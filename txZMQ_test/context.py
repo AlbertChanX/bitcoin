@@ -14,8 +14,8 @@ class Context(ContextBase):
     """
     sockopts = None
 
-    def __init__(self, io_threads=1, **kwargs):
-        super(Context, self).__init__(io_threads=io_threads, **kwargs)
+    def __init__(self):
+        super(Context, self).__init__()
         self.MAX_SOCKETS = 10000
         # self.sockopts = {'MAX_SOCKETS': 10000}
         # self.setsockopt('MAX_SOCKETS', 10000)
