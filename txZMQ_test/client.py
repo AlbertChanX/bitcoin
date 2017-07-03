@@ -29,15 +29,14 @@ class Client(object):
 
     def __init__(self, s):
         self.s = s
-        # self.i = i
 
 
 if __name__ == "__main__":
 
     def produce():
         global req
-        data = str(time.time()) + ' '
-        print "Requesting %r" % data
+        data = str(time.time()) + ' '   # data json 1M
+        print("Requesting %r" % data)
         try:
             d = req.sendMsg(data, timeout=6)
             def doPrint(reply):  # else reply -->list
@@ -52,7 +51,7 @@ if __name__ == "__main__":
                 req = ZmqREQConnection(zf, ZmqEndpoint('connect', s_ip))
             d.addCallback(doPrint).addErrback(onTimeout)
         except zmq.error.Again:
-            print "Skipping, no consumers..."
+            print("Skipping, no consumers...")
         reactor.callLater(1, produce)       # callLater(1,produce,args)  args --> produce(callback)
     reactor.callWhenRunning(produce)
     reactor.run()

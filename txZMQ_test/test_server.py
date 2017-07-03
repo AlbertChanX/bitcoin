@@ -21,7 +21,7 @@ def doPrint(*args):  # gotMessage(self, message, tag):
     global num
     num += 1
     print("the num of data: %d" % (num))
-    print "message received: %r" % (args,)
+    print("message received: %r" % (args,))
 
 
 def generate_s():
@@ -30,7 +30,7 @@ def generate_s():
         s_list = []
         global sub
         sub = ZmqSubConnection(zf, ZmqEndpoint('connect', 'tcp://127.0.0.1:8881'))
-        sub.subscribe("btc")
+        sub.subscribe("btc" % (i+1))
         sub.gotMessage = doPrint
         names = locals()
         names['server-%s' % i] = Server(sub)

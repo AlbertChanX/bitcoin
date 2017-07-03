@@ -3,6 +3,8 @@ from txzmq import ZmqEndpoint, ZmqFactory, ZmqPubConnection, ZmqRouterConnection
 from twisted.internet import reactor
 import uuid
 from optparse import OptionParser
+import json
+import time
 """
 cpu, the number of client, 
 """
@@ -33,13 +35,20 @@ pub = ZmqEndpoint('bind', options.ep2)
 
 recv = ZmqREPConnection(zf, backend)  # REP
 send = ZmqPubConnection(zf, pub)      # Pub
-
+num = 0
 
 # ZmqREPConnection
+
+
 def doPrint(messageId, message):  # uuid
-        print "Replying to %s, %r" % (b2str(messageId), message)
-        recv.reply(messageId, "%s %r " % (b2str(messageId), message))  # reply to client (id+msg) by mId
-    # pub ---> 8881
+        # print('interval: ' ,time.time()-message[1])
+        data = json.loads(message)
+        print(type(data))
+        print "Replying to %s, %r client-%s" % (b2str(messageId), data['time'], data['channel'])
+        recv.reply(messageId, "%s %r " % (b2str(messageId), len(json.loads(message))/1024.0/1024.0))  # reply to client (id+msg) by mId
+        global num
+        num += 1
+        print('the num of reply: %s' % num)
         send.publish(message, tag='btc')
 
 recv.gotMessage = doPrint

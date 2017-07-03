@@ -1,15 +1,20 @@
+# coding:utf-8
 from txzmq import ZmqEndpoint, ZmqREQConnection, ZmqRequestTimeoutError
 from twisted.internet import reactor
 import time
 import zmq
 from ZmqFactory import ZmqFactory
+import json
 
-ip = 'tcp://10.10.0.65:8880'
+ip = 'tcp://127.0.0.1:8880'
 zf = ZmqFactory()
 s = ZmqREQConnection(zf, ZmqEndpoint('connect', ip))
-
-
 num = 0
+senddata = {}
+with open('block.json', 'r') as f:
+    data = f.read()
+    data = json.dumps(data)  # .encode('utf-8')
+    senddata['data'] = data
 
 class Client(object):
     def __init__(self, s):
@@ -17,13 +22,23 @@ class Client(object):
 
     def request(self):
         def produce():
-            data = str(time.time())
-            print("Requesting %r" % data)
+            # j_data = dict()
+            now = str(time.time())
+            # print(len(now.encode('utf-8')))
+            # j_data['time'] = now
+
+
+            # print(data)
+            # print("Requesting %r" % data)
+            # print(json.loads(data)['time'])
             try:
                 global num
                 num += 1
-                print('the num of request: %d' %num)
-                d = self.s.sendMsg(data, timeout=60)
+                print('the num of request: %d, time is %s' % (num, now))
+                global senddata
+                senddata['time'] = now
+                senddata['channel'] = num
+                d = self.s.sendMsg(json.dumps(senddata), timeout=60)
 
                 def doPrint(reply):  # else reply -->list
                     print("Got reply: %s" % (reply[0]))  # ???
@@ -31,17 +46,18 @@ class Client(object):
                 def onTimeout(fail):  # except
                     fail.trap(ZmqRequestTimeoutError)
                     print("Timeout on request, is reply server running?")
-
+                    self.s.shutdown()
+                    self.s = ZmqREQConnection(zf, ZmqEndpoint('connect', ip))
                 d.addCallback(doPrint).addErrback(onTimeout)
             except zmq.error.Again:
                 print("Skipping, no consumers...")
-            reactor.callLater(10, produce)
+            # reactor.callLater(10, produce)
         reactor.callWhenRunning(produce)
 
 
 def generate_c():
     c_list = []
-    for i in range(100):
+    for i in range(1000):
         print(i)
         global s
         s = ZmqREQConnection(zf, ZmqEndpoint('connect', ip))

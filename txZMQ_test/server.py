@@ -13,8 +13,8 @@ sub2.subscribe("btc")
 
 
 def doPrint(*args):   # gotMessage(self, message, tag):
-    print("interval: %s"%(time.time()-float(args[0])))
-    print "message received: %r" % (args,)
+    print("interval: %s" % (time.time()-float(args[0])))
+    print("message received: %r" % (args,))
 sub1.gotMessage = doPrint
 sub2.gotMessage = doPrint
 

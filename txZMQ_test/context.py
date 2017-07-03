@@ -16,7 +16,8 @@ class Context(ContextBase):
 
     def __init__(self):
         super(Context, self).__init__()
-        self.MAX_SOCKETS = 10000
+        self.MAX_SOCKETS = 100000
+        self.SNDHWM = 100000
         # self.sockopts = {'MAX_SOCKETS': 10000}
         # self.setsockopt('MAX_SOCKETS', 10000)
         # print('MAX_SOCKETS: ', self.getsockopt('MAX_SOCKETS'))
