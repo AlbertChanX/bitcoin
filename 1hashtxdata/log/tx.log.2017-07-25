@@ -1,0 +1,9 @@
+2017-07-25 14:34:32,239 INFO 1hash-txinfo.py logger.info  # getting pages = 43, total_count: 2131
+2017-07-25 14:34:32,243 INFO DBHelper logger.info  # connected sqlite3 success
+2017-07-25 14:34:32,246 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-07-25 14:34:33,286 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-07-25 14:34:34,788 INFO DBHelper logger.info  # connected sqlite3 success
+2017-07-25 14:34:34,789 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x113ebaf80>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-07-25 14:34:34,789 INFO 1hash-txinfo.py logger.info  # updated 0 tx
+2017-07-25 14:34:34,790 INFO DBHelper logger.info  # connected sqlite3 success
+2017-07-25 14:34:34,840 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0

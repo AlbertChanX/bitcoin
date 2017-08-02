@@ -16,16 +16,18 @@ def my_req(url):
         r = requests.get(url, timeout=20)
         r.raise_for_status()      # 如果响应状态码不是 200，就主动抛出异常
     except requests.RequestException as e:
+        result = None
         log.error(e)
     else:
         time.sleep(0.5)
         result = r.json()
-        # print(result)
+    finally:
+        pass
     return result
 
 
 def get_blockheight(t):
-    print (int(t[6:8]))
+    # print (int(t[6:8]))
     dt = datetime.date(int(t[0:4]), int(t[4:6]), int(t[6:8]))
     # get last month/year
     t_last = months(dt, -1)   # the last month like '20161201'
@@ -50,7 +52,7 @@ def get_block_num_monthly(dttime):   # 2017-6-30
     t = time.localtime(time.time())
     if time.strftime('%Y-%m-%d %H:%M:%S', t) > dttime:   # 7 > 6
         dttime = dttime.replace('-', '')
-        month = int(dttime[4:6])
+        # month = int(dttime[4:6])
         bom = get_blockheight(dttime)   # 2017-06-30
         print('bom ', bom)
         dt = datetime.date(int(dttime[0:4]), int(dttime[4:6]), int(dttime[6:8]))
@@ -72,7 +74,6 @@ def get_block_num_monthly(dttime):   # 2017-6-30
 
 if __name__ == "__main__":
 
-    t = time.time()
 
     # gevent.joinall([
     #         gevent.spawn(f, 'https://www.python.org/'),
@@ -86,6 +87,8 @@ if __name__ == "__main__":
         time.sleep(0.5)
         print('%d bytes received from %s.' % (len(data), url))
 
+
+    t = time.time()
     tasks = []
     for i in range(40):
         url = 'https://chain.api.btc.com/v3/address' \

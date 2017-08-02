@@ -1,5 +1,5 @@
 
-import DBHelper
+import dbhelper
 import sqlite3
 import pandas as pd
 
@@ -32,6 +32,8 @@ sql = 'select * from income'
 #
 df = pd.read_sql(sql, conn)  # index_col=['id','time']
 df = df.set_index(pd.DatetimeIndex(df['time']))
+print(df.index.year.unique())
+print(df['2017'])
 # pd.io.sql.write_frame(df, 'tablename', conn)
 conn.close()
 # df_s = df.sort_index(ascending=False)   # sort --> df_s
@@ -41,7 +43,7 @@ df_s = df[['time', 'fee']]  # .groupby(['is_coinbase']).cumsum()
 # print(grouped)
 # grouper = pd.TimeGrouper("1M")
 # df_s['sum1'] = df_s.groupby(grouper).transform(lambda x: x.sum())
-print(df_s.ix[:, 'fee'].head())
+df_s.loc[:, 'fee'].head()
 
 # writer = pd.ExcelWriter('1hash_tx_dada_%s.xlsx' % get_time())
 # df_s.to_excel(writer, 'Sheet1')  # sheet_name='Sheet1'

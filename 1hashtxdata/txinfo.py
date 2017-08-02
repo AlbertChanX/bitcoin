@@ -5,7 +5,7 @@ from openpyxl import Workbook
 import pandas as pd
 from timetools import get_time
 from timetools import ts2time
-from DBHelper import DBHelper
+from dbhelper import DBHelper
 import logger
 import math
 
@@ -101,7 +101,7 @@ class Data(object):
                    '5d97f3052edaa9676add54e5c7b4aa3549370083beb5035dfabf64d209e1f258']
         con = DBHelper().get_con()
         sql = 'select time, txid, balance_diff, ' \
-              'fee, is_coinbase, outputs_count from income'
+              'fee, is_coinbase from income'
         df = pd.read_sql(sql, con)
         df = df.set_index(pd.DatetimeIndex(df['time']))
         con.close()
@@ -127,21 +127,25 @@ class Data(object):
         # block_monthly
         from request_tools import get_block_num_monthly
         block_monthly = []
-        for month in df_month.index:
-            num = get_block_num_monthly(str(month)[:10])
-            block_monthly.append(num)
-        df_month['block_monthly'] = block_monthly
+        # for month in df_month.index:
+        #     num = get_block_num_monthly(str(month)[:10])
+        #     block_monthly.append(num)
+        # df_month['block_monthly'] = block_monthly
         log.info('add block_monthly success: num is %s' % len(block_monthly))
 
         # 流水明细
         df_detail = df.sort_index()
         print(df_detail)
-        df_detail = df_detail.drop(['is_coinbase', 'outputs_count'], axis=1)
+        df_detail = df_detail.drop(['is_coinbase'], axis=1)
         df_detail['balance'] = df_detail['balance_diff'].cumsum()
 
         # save to excel
-        writer = pd.ExcelWriter('1hash_tx_dada_%s.xlsx' % get_time())
-        df_month.to_excel(writer, sheet_name=u'汇总结果')
+        writer = pd.ExcelWriter('data/1hash_tx_dada_%s.xlsx' % get_time())
+        df_month_group = df_month.copy()
+        tmp = df_month_group.reset_index(drop=True).sum(axis=0)
+        df_month_group.loc['Column_sum'] = tmp
+        # df_month_group.loc['Column_sum'] = df_month_group.apply(lambda x: x.sum())  # axis=1)
+        df_month_group.to_excel(writer, sheet_name=u'汇总结果')
         df_detail.to_excel(writer, sheet_name=u'流水明细表')
         writer.save()
 

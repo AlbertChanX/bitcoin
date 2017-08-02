@@ -1,19 +1,20 @@
 
 import logger
 from txinfo import Data
-from Chart import Chart
+from chart import Chart
+from dash_plot.dash_tx import application
 
 if __name__ == '__main__':
-    logger.initialize('DEBUG', 'INFO', 'tx.log')
+    logger.initialize('DEBUG', 'INFO', 'log/tx.log')
     log = logger.get_logger('main.py')
     # update data
     v_list = Data().get_tx()
     Data().update_tx(v_list)
     # get group by excel
-    df = Data().group_result(year=None)
-    # get Charts
-    # print(df.index)
-    # for i in df.index:
-    #     print str(i)[:10]
+    df = Data().group_result(year=None)  # year='2017'
+
     print(df)
-    Chart.get_bar(df)
+    application(df)
+    # get Charts
+    # Chart.get_bar(df)
+    # Chart.get_line_bar(df)

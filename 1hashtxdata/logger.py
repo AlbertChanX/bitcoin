@@ -90,7 +90,8 @@ class Logger(object):
         else:
             self.log.critical(message)
 
-initialize = Logger.initialize    # cls method --> logger.py initialize
+# call 1 time only
+initialize = Logger.initialize    # cls method --> logger.py initialize (method)
 
 
 def get_logger(name):
