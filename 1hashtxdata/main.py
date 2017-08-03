@@ -4,6 +4,11 @@ from txinfo import Data
 from chart import Chart
 from dash_plot.dash_tx import application
 
+#   /\_/\
+# =( °w° )=
+#   )   (  //
+#  (__ __)//
+
 if __name__ == '__main__':
     logger.initialize('DEBUG', 'INFO', 'log/tx.log')
     log = logger.get_logger('main.py')

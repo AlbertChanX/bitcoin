@@ -127,10 +127,10 @@ class Data(object):
         # block_monthly
         from request_tools import get_block_num_monthly
         block_monthly = []
-        # for month in df_month.index:
-        #     num = get_block_num_monthly(str(month)[:10])
-        #     block_monthly.append(num)
-        # df_month['block_monthly'] = block_monthly
+        for month in df_month.index:
+            num = get_block_num_monthly(str(month)[:10])
+            block_monthly.append(num)
+        df_month['block_monthly'] = block_monthly
         log.info('add block_monthly success: num is %s' % len(block_monthly))
 
         # 流水明细
