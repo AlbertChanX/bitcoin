@@ -594,3 +594,41 @@
 2017-08-04 17:03:47,732 INFO DBHelper logger.info  # connected sqlite3 success
 2017-08-04 17:03:47,777 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
 2017-08-04 17:04:14,932 CRITICAL dash.py logger.critical  # balance pic
+2017-08-04 17:21:11,871 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
+2017-08-04 17:21:11,873 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:11,873 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-04 17:21:13,237 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-04 17:21:14,742 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:14,742 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10f4f9c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-04 17:21:14,743 INFO 1hash-txinfo.py logger.info  # updated 0 tx
+2017-08-04 17:21:14,743 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:14,790 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
+2017-08-04 17:21:20,595 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
+2017-08-04 17:21:20,597 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:20,598 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-04 17:21:21,895 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-04 17:21:23,402 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:23,404 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x109a33c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-04 17:21:23,404 INFO 1hash-txinfo.py logger.info  # updated 0 tx
+2017-08-04 17:21:23,404 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:23,447 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
+2017-08-04 17:21:39,055 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
+2017-08-04 17:21:39,057 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:39,058 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-04 17:21:40,393 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-04 17:21:41,900 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:41,901 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x107734c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-04 17:21:41,901 INFO 1hash-txinfo.py logger.info  # updated 0 tx
+2017-08-04 17:21:41,901 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:21:41,940 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
+2017-08-04 17:21:45,707 CRITICAL dash.py logger.critical  # balance pic
+2017-08-04 17:22:21,889 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
+2017-08-04 17:22:21,890 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:22:21,891 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-04 17:22:23,170 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-04 17:22:24,676 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:22:24,676 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x110e70c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-04 17:22:24,677 INFO 1hash-txinfo.py logger.info  # updated 0 tx
+2017-08-04 17:22:24,678 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-04 17:22:24,719 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
+2017-08-04 17:22:35,608 CRITICAL dash.py logger.critical  # balance pic

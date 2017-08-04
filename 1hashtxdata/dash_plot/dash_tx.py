@@ -94,7 +94,7 @@ def application(df, df2):
                 title='1hash Balance'
             )
         }
-    app.run_server(host='0.0.0.0', use_reloader=True)  # default port=8050
+    app.run_server(host='0.0.0.0', use_reloader=False)  # default port=8050
 
 
 # hello
