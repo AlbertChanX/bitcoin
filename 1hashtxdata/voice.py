@@ -8,3 +8,4 @@ engine.runAndWait()
 # 朗读一次
 engine.endLoop()
 print('ok')
+print('hello')

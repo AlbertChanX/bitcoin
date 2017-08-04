@@ -1,7 +1,7 @@
 # coding:utf-8
 from request_tools import my_req
 import time
-from openpyxl import Workbook
+# from openpyxl import Workbook
 import pandas as pd
 from timetools import get_time
 from timetools import ts2time
@@ -68,17 +68,12 @@ class Data(object):
                     tmp.append(txid)
                     tmp.append(balance_diff)
                     tmp.append(fee)
-                    # print(fee)
                     tmp.append(is_cb)
                     tmp.append(outputs)
                     tx_list.append(tuple(tmp))
                 else:
                     flag = 1
                     break
-                # tmp.append(ts)
-                # tmp.append(txid)
-                # tmp.append(balance)
-                # print(tmp)
             if flag == 1:
                 break
         return tx_list
@@ -124,13 +119,13 @@ class Data(object):
         df_month['payout'] = df_pay['balance_diff']
         # print(df_month)
 
-        # block_monthly
+        # block_monthly   获取每月出块数量， 消耗时间较长
         from request_tools import get_block_num_monthly
         block_monthly = []
-        for month in df_month.index:
-            num = get_block_num_monthly(str(month)[:10])
-            block_monthly.append(num)
-        df_month['block_monthly'] = block_monthly
+        # for month in df_month.index:
+        #     num = get_block_num_monthly(str(month)[:10])
+        #     block_monthly.append(num)
+        # df_month['block_monthly'] = block_monthly
         log.info('add block_monthly success: num is %s' % len(block_monthly))
 
         # 流水明细
@@ -149,19 +144,19 @@ class Data(object):
         df_detail.to_excel(writer, sheet_name=u'流水明细表')
         writer.save()
 
-        return df_month
+        return df_month, df_detail
 
 
-def save_tx(tx_list):
-    wb = Workbook()
-    # 获取当前活跃的worksheet,默认就是第一个worksheet
-    ws = wb.active
-    title = ['time', 'is_coinbase', 'block_revenue', 'fee']
-    ws.append(title)
-    for tx in tx_list:
-        ws.append(tx)
-        print(tx)
-    wb.save(filename="1hash_tx2.xlsx")
+# def save_tx(tx_list):
+#     wb = Workbook()
+#     # 获取当前活跃的worksheet,默认就是第一个worksheet
+#     ws = wb.active
+#     title = ['time', 'is_coinbase', 'block_revenue', 'fee']
+#     ws.append(title)
+#     for tx in tx_list:
+#         ws.append(tx)
+#         print(tx)
+#     wb.save(filename="1hash_tx2.xlsx")
 
 
 if __name__ == "__main__":

@@ -4,14 +4,16 @@ import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
 import pandas as pd
+import logger
+log = logger.get_logger('dash.py')
 
 
-def application(df):
+def application(df, df2):
     app = dash.Dash()
 
     app.layout = html.Div([
 
-
+        html.Div([
         dcc.Graph(id='tx-graphic'),
 
         dcc.Slider(
@@ -21,9 +23,16 @@ def application(df):
             value=df.index.year.max(),      # default
             step=None,
             marks={str(year): str(year) for year in df.index.year.unique()}
-        )
-    ], style={'padding': '2%'})
-
+        )], style={'padding': '2%'}),
+        html.Div([
+            dcc.RadioItems(
+                id='dropdown-b',
+                options=[{'label': i, 'value': i} for i in ['1HASH']],
+                value='1HASH'
+            ),
+            dcc.Graph(id='onehash-balance')
+        ], style={'padding': '1%', 'height': '800px'})
+        ])
 
     @app.callback(
         dash.dependencies.Output('tx-graphic', 'figure'),
@@ -39,12 +48,7 @@ def application(df):
                 text=(dff['fee']/dff['balance_diff']).
                   apply(lambda x: str("{0:.2f}%".format((x*100)))),
                 name='Fee'
-                # mode='markers',
-                # marker={
-                #     'size': 15,
-                #     'opacity': 0.5,
-                #     'line': {'width': 0.5, 'color': 'white'}
-                # }
+
             ),
                 go.Bar(
                 x=xtime,
@@ -66,8 +70,31 @@ def application(df):
                     'title': 'BTC',
                 },
                 # margin={'l': 40, 'b': 40, 't': 10, 'r': 0},
-                hovermode='closest'
+                hovermode='closest',
+                title='Revenue & Fee & Payment'
             )
         }
 
-    app.run_server()
+    @app.callback(
+        dash.dependencies.Output('onehash-balance', 'figure'),
+        [dash.dependencies.Input('dropdown-b', 'value')])
+    def update_graph(v):
+        # dff = df2[df2['Year'] == year_value]
+        log.critical('balance pic')
+        return {
+            'data': [go.Scatter(
+                x=df2['time'],
+                y=df2['balance'],
+                text=df2['time'],
+                customdata=df2['balance'],
+                name='balance'
+
+            )],
+            'layout': go.Layout(
+                title='1hash Balance'
+            )
+        }
+    app.run_server(host='0.0.0.0', use_reloader=True)  # default port=8050
+
+
+# hello

@@ -45,14 +45,14 @@ class Chart(object):
         # df['is_coinbase'].plot(kind='bar', filename='grouped-bar-chart.html')
         xtime = map(lambda x: str(pd.Period(x, freq='M')), df.index.tolist())
         trace1 = go.Scatter(
-            x=xtime,
-            y=df['is_coinbase'].tolist(),
-            name='blocks'
+            x=df['time'],
+            y=df['balance'].tolist(),
+            name='balance'
         )
         trace2 = go.Bar(
-            x=xtime,
-            y=df['is_coinbase'].tolist(),
-            name='blocks'
+            # x=xtime,
+            # y=df['balance'].tolist(),
+            # name='blocks'
         )
         data = [trace1, trace2]
         layout = go.Layout(
