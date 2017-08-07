@@ -1,4 +1,4 @@
-
+from timetools import get_time
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -28,7 +28,7 @@ def application(df, df2):
             dcc.RadioItems(
                 id='dropdown-b',
                 options=[{'label': i, 'value': i} for i in ['1HASH']],
-                value='1HASH'
+                value='updatetime: %s' % get_time()
             ),
             dcc.Graph(id='onehash-balance')
         ], style={'padding': '1%', 'height': '800px'})
