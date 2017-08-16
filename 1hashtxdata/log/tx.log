@@ -1,635 +1,883 @@
-2017-08-04 09:43:50,558 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 09:43:50,563 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:43:50,567 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 09:43:51,653 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 09:43:53,156 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:43:53,159 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1109ef8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 09:43:53,160 INFO 1hash-txinfo.py logger.info  # updated 1 tx
-2017-08-04 09:43:53,160 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:44:24,043 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 09:44:31,627 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 09:44:31,629 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:44:31,630 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 09:44:32,753 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 09:44:34,258 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:44:34,259 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10a1ff8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 09:44:34,259 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 09:44:34,260 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:45:05,814 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 09:55:08,353 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 09:55:08,356 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:55:08,359 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 09:55:09,493 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 09:55:11,000 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:55:11,001 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10f5bb8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 09:55:11,001 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 09:55:11,002 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:55:40,141 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 09:55:45,398 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 09:55:45,400 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:55:45,401 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 09:55:46,374 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 09:55:47,881 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:55:47,882 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10760a8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 09:55:47,882 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 09:55:47,882 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:56:16,965 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 09:58:57,009 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 09:58:57,013 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:58:57,015 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 09:58:58,028 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 09:58:59,534 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:58:59,535 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10ccb18f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 09:58:59,535 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 09:58:59,535 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:59:28,881 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 09:59:53,748 ERROR data.py logger.error  # 503 Server Error: Service Temporarily Unavailable for url: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 09:59:54,485 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 09:59:54,489 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:59:54,491 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 09:59:55,445 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 09:59:56,951 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 09:59:56,951 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x11260a8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 09:59:56,951 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 09:59:56,952 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:00:25,806 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 10:00:31,291 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:00:31,293 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:00:31,294 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:00:32,389 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:00:33,895 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:00:33,896 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x110cdf8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:00:33,896 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:00:33,897 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:01:02,597 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 10:05:03,150 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:05:03,153 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:05:03,155 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:05:04,118 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:05:05,625 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:05:05,626 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1109a38f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:05:05,626 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:05:05,626 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:05:34,470 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 10:05:39,907 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:05:39,909 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:05:39,909 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:05:40,950 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:05:42,458 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:05:42,458 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x11146e8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:05:42,458 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:05:42,459 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:06:13,435 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 10:07:45,524 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:07:45,529 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:07:45,533 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:07:46,495 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:07:48,000 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:07:48,001 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1059ce8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:07:48,001 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:07:48,002 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:08:16,753 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 10:12:12,430 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:12:12,435 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:12:12,438 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:12:13,411 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:12:14,915 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:12:14,915 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10850f8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:12:14,916 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:12:14,916 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:12:44,650 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 10:16:23,285 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:16:23,288 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:16:23,290 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:16:24,531 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:16:26,034 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:16:26,034 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1081a08f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:16:26,034 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:16:26,035 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:16:26,084 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:19:54,113 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:19:54,114 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:19:54,115 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:19:55,192 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:19:56,698 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:19:56,698 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x114d278f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:19:56,699 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:19:56,699 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:19:56,731 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:22:16,305 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:22:16,306 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:22:16,307 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:22:17,275 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:22:18,779 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:22:18,779 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x110acd8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:22:18,779 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:22:18,780 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:22:18,819 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:23:04,591 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:23:04,593 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:23:04,594 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:23:05,548 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:23:07,052 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:23:07,053 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x11389b8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:23:07,053 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:23:07,053 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:23:07,085 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:24:20,450 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:24:20,454 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:24:20,457 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:24:21,460 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:24:22,967 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:24:22,967 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10aff48f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:24:22,968 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:24:22,968 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:24:23,030 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:25:14,073 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:25:14,080 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:25:14,083 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:25:15,093 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:25:16,599 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:25:16,600 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1065cb8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:25:16,600 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:25:16,600 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:25:16,649 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:26:28,922 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:26:28,926 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:26:28,928 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:26:29,934 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:26:31,441 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:26:31,441 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10f19c8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:26:31,442 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:26:31,442 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:26:31,490 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:29:41,405 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:29:41,408 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:29:41,409 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:29:42,587 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:29:44,094 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:29:44,095 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x107d9c8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:29:44,095 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:29:44,095 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:29:44,143 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:31:57,032 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:31:57,036 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:31:57,037 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:31:58,336 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:31:59,841 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:31:59,841 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x105dd18f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:31:59,841 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:31:59,842 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:31:59,879 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:34:01,522 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:34:01,527 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:34:01,530 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:34:02,581 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:34:04,086 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:34:04,087 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10ee918f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:34:04,087 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:34:04,088 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:34:04,135 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:35:11,872 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:35:11,877 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:11,880 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:35:12,885 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:35:14,393 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:14,394 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x111743b20>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:35:14,395 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:35:14,396 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:14,490 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:35:32,335 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:35:32,337 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:32,338 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:35:33,344 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:35:34,849 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:34,850 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10f5d58f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:35:34,850 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:35:34,851 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:34,882 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:35:50,048 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:35:50,050 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:50,051 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:35:51,045 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:35:52,551 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:52,552 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1058a6b20>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:35:52,553 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:35:52,555 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:35:52,626 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:37:21,503 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:37:21,509 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:37:21,516 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:37:22,513 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:37:24,017 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:37:24,018 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10b58f8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:37:24,018 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:37:24,018 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:37:24,068 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:49:24,259 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:49:24,261 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:49:24,263 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:49:25,285 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:49:26,789 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:49:26,790 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x114b548f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:49:26,791 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:49:26,791 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:49:26,847 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:52:38,272 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:52:38,275 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:52:38,277 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:52:39,301 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:52:40,807 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:52:40,808 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10bbc78f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:52:40,808 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:52:40,808 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:52:40,857 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:52:48,138 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 10:54:24,907 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:54:24,911 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:54:24,913 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:54:25,932 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:54:27,435 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:54:27,435 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x109f9e8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:54:27,436 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:54:27,436 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:54:27,491 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:54:36,317 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 10:54:50,513 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 10:56:21,866 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:56:21,870 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:56:21,873 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:56:22,948 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:56:24,454 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:56:24,455 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10d2298f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:56:24,456 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:56:24,456 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:56:24,517 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:56:47,852 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 10:56:58,204 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 10:57:29,792 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 10:57:29,795 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:57:29,797 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 10:57:30,828 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 10:57:32,331 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:57:32,331 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10b2e08f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 10:57:32,331 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 10:57:32,331 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 10:57:32,372 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 10:57:37,278 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 10:58:46,203 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:00:07,951 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:03:39,139 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:03:39,143 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:03:39,146 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:03:40,217 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:03:41,721 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:03:41,722 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10a25f8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:03:41,722 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:03:41,723 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:03:41,767 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:03:48,455 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:03:48,458 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:03:48,460 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:03:49,531 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:03:51,038 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:03:51,038 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10a1e28f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:03:51,039 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:03:51,039 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:03:51,090 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:04:17,177 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:04:26,443 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:05:18,817 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:05:18,821 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:05:18,824 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:05:19,837 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:05:21,344 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:05:21,345 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x112a948f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:05:21,345 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:05:21,345 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:05:50,510 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:05:55,450 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:05:55,452 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:05:55,452 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:05:56,481 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:05:57,987 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:05:57,987 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10d5398f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:05:57,987 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:05:57,988 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:06:27,935 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:06:35,734 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:06:44,948 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:06:59,357 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:07:36,909 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:07:36,913 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:07:36,916 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:07:38,043 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:07:39,547 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:07:39,548 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10eb568f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:07:39,548 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:07:39,549 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:08:08,695 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:08:13,767 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:08:13,770 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:08:13,771 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:08:14,764 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:08:16,269 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:08:16,270 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10b2748f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:08:16,271 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:08:16,271 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:08:45,629 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:10:59,987 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:10:59,989 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:10:59,989 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:11:01,163 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:11:02,669 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:11:02,669 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10cbd68f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:11:02,670 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:11:02,670 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:11:02,703 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:11:08,372 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:11:08,375 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:11:08,378 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:11:09,489 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:11:10,994 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:11:10,995 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10d0f38f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:11:10,995 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:11:10,995 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:11:11,039 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:11:16,279 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:12:11,310 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:12:11,313 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:12:11,314 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:12:12,369 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:12:13,877 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:12:13,877 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1095398f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:12:13,877 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:12:13,878 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:12:13,911 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:12:23,313 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:15:42,858 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:15:42,861 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:15:42,862 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:15:43,861 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:15:45,363 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:15:45,364 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1096898f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:15:45,364 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:15:45,364 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:15:45,398 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:18:18,971 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:21:03,794 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:21:03,795 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:21:03,798 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:21:04,768 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:21:06,271 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:21:06,271 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10d1298f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:21:06,272 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:21:06,272 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:21:06,304 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:21:11,518 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:21:11,520 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:21:11,521 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:21:12,537 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:21:14,043 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:21:14,043 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10fa3c8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:21:14,043 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:21:14,044 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:21:14,076 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:21:46,066 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:21:53,974 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:22:06,846 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:22:18,232 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:27:00,633 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:33:53,619 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:33:53,624 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:33:53,627 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:33:54,641 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:33:56,148 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:33:56,149 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1152d98f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:33:56,149 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:33:56,149 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:34:25,398 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:38:08,578 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:38:08,581 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:38:08,584 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:38:09,586 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:38:11,090 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:38:11,091 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x109df98f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:38:11,091 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:38:11,092 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:38:39,928 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:40:15,057 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:40:15,061 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:40:15,064 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:40:16,052 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:40:17,560 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:40:17,560 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x107f878f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:40:17,561 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:40:17,561 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:40:47,040 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:41:46,750 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:41:46,754 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:41:46,757 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:41:47,799 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:41:49,305 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:41:49,306 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1157a08f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:41:49,306 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:41:49,307 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:42:19,870 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:42:55,058 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:42:55,062 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:42:55,065 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:42:56,614 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:42:58,117 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:42:58,118 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10a9898f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:42:58,118 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:42:58,118 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:43:40,371 ERROR data.py logger.error  # HTTPSConnectionPool(host='chain.api.btc.com', port=443): Read timed out. (read timeout=20)
-2017-08-04 11:45:57,241 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:45:57,242 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:45:57,243 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:45:58,246 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:45:59,753 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:45:59,754 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10d5158f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:45:59,754 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:45:59,755 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:46:28,293 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:46:34,130 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:46:34,135 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:46:34,139 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:46:35,337 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:46:36,842 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:46:36,842 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1121b38f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:46:36,843 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:46:36,843 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:47:05,466 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:49:12,462 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:49:12,466 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:49:12,469 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:49:13,518 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:49:15,024 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:49:15,024 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x112b278f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:49:15,024 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:49:15,025 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:49:43,757 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:49:48,673 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:49:48,674 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:49:48,675 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:49:49,710 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:49:51,215 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:49:51,215 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x111c4a8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:49:51,216 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:49:51,216 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:50:19,963 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:50:36,986 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:50:36,990 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:50:36,991 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:50:38,010 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:50:39,514 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:50:39,515 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10d2388f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:50:39,515 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:50:39,516 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:51:10,283 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:51:57,760 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:51:57,763 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:51:57,764 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:51:58,775 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:52:00,278 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:52:00,279 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x114c038f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:52:00,279 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:52:00,279 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:52:29,590 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:52:54,049 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:52:54,053 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:52:54,057 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:52:55,280 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:52:56,787 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:52:56,788 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x106b658f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:52:56,788 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:52:56,788 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:53:26,590 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 18
-2017-08-04 11:54:25,645 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:54:25,647 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:54:25,650 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:54:26,597 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:54:28,101 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:54:28,101 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1099a98f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:54:28,102 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:54:28,102 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:55:04,509 ERROR data.py logger.error  # HTTPSConnectionPool(host='chain.api.btc.com', port=443): Max retries exceeded with url: /v3/block/date/2016-06-30 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x1098c67d0>, 'Connection to chain.api.btc.com timed out. (connect timeout=30)'))
-2017-08-04 11:56:14,128 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:56:14,130 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:56:14,131 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:56:15,097 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:56:16,602 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:56:16,603 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10af968f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:56:16,603 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:56:16,604 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:56:16,636 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:56:22,445 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:56:22,447 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:56:22,448 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:56:23,448 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:56:24,954 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:56:24,955 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10e04b8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:56:24,956 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:56:24,956 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:56:24,995 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:56:29,012 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 11:57:13,470 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:57:13,473 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:57:13,474 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:57:14,425 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:57:15,929 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:57:15,929 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x106df58f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:57:15,930 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:57:15,930 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:57:15,967 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 11:57:24,482 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 11:57:24,485 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:57:24,486 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 11:57:25,497 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 11:57:27,003 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:57:27,004 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10a81e8f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 11:57:27,004 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 11:57:27,004 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 11:57:27,043 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 12:02:22,434 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2157
-2017-08-04 12:02:22,437 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 12:02:22,439 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 12:02:23,715 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 12:02:25,222 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 12:02:25,222 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x105033c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 12:02:25,222 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 12:02:25,223 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 12:02:25,270 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 12:09:47,206 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 13:34:26,358 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 13:42:01,770 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 13:42:43,362 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 14:13:52,093 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 14:13:53,132 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 14:15:17,020 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 14:15:27,464 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 16:28:09,138 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 17:02:59,654 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
-2017-08-04 17:02:59,657 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:02:59,660 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 17:02:59,870 ERROR data.py logger.error  # 503 Server Error: Service Temporarily Unavailable for url: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:02:59,871 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:03:35,426 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
-2017-08-04 17:03:35,429 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:03:35,430 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 17:03:36,856 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:03:38,362 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:03:38,366 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10d979c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 17:03:38,366 INFO 1hash-txinfo.py logger.info  # updated 1 tx
-2017-08-04 17:03:38,367 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:03:38,414 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 17:03:44,928 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
-2017-08-04 17:03:44,932 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:03:44,933 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 17:03:46,224 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:03:47,731 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:03:47,732 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x112beac70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 17:03:47,732 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 17:03:47,732 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:03:47,777 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 17:04:14,932 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 17:21:11,871 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
-2017-08-04 17:21:11,873 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:11,873 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 17:21:13,237 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:21:14,742 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:14,742 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10f4f9c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 17:21:14,743 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 17:21:14,743 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:14,790 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 17:21:20,595 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
-2017-08-04 17:21:20,597 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:20,598 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 17:21:21,895 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:21:23,402 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:23,404 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x109a33c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 17:21:23,404 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 17:21:23,404 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:23,447 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 17:21:39,055 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
-2017-08-04 17:21:39,057 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:39,058 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 17:21:40,393 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:21:41,900 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:41,901 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x107734c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 17:21:41,901 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 17:21:41,901 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:21:41,940 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 17:21:45,707 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 17:22:21,889 INFO 1hash-txinfo.py logger.info  # getting pages = 44, total_count: 2158
-2017-08-04 17:22:21,890 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:22:21,891 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
-2017-08-04 17:22:23,170 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
-2017-08-04 17:22:24,676 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:22:24,676 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x110e70c70>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
-2017-08-04 17:22:24,677 INFO 1hash-txinfo.py logger.info  # updated 0 tx
-2017-08-04 17:22:24,678 INFO DBHelper logger.info  # connected sqlite3 success
-2017-08-04 17:22:24,719 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is 0
-2017-08-04 17:22:35,608 CRITICAL dash.py logger.critical  # balance pic
-2017-08-04 17:36:43,856 CRITICAL dash.py logger.critical  # balance pic
+2017-08-16 14:18:24,713 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:18:24,717 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:18:24,720 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-15 08:05:58
+2017-08-16 14:18:24,720 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:18:26,074 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:18:26,077 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:18:26,080 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x112da71f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:18:26,081 INFO 1hash-txinfo.py logger.info  # updated 9 txinfo
+2017-08-16 14:18:26,081 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:18:26,139 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:18:26,140 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:18:28,400 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:18:28,401 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:13,170 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:19:13,171 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:13,172 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:19:13,172 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:19:14,484 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:19:14,485 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:14,486 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1090641f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:19:14,486 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:19:14,486 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:14,535 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:14,535 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:16,964 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:16,965 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:39,281 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:19:39,282 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:39,283 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:19:39,283 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:19:40,595 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:19:40,596 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:40,597 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10b0ce1f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:19:40,597 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:19:40,597 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:40,661 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:40,661 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:42,909 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:42,910 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:42,911 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-02-29 00:00:00', freq='M'), 4572, 1)
+2017-08-16 14:19:45,101 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:45,102 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:45,102 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-03-31 00:00:00', freq='M'), 4573, 1)
+2017-08-16 14:19:47,331 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:47,331 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:47,332 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-04-30 00:00:00', freq='M'), 4459, 1)
+2017-08-16 14:19:50,303 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:50,303 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:50,303 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-05-31 00:00:00', freq='M'), 4627, 1)
+2017-08-16 14:19:52,631 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:52,631 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:52,632 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-06-30 00:00:00', freq='M'), 4450, 1)
+2017-08-16 14:19:54,859 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:54,859 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:54,860 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-07-31 00:00:00', freq='M'), 4370, 1)
+2017-08-16 14:19:57,052 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:57,053 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:57,053 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-08-31 00:00:00', freq='M'), 4643, 1)
+2017-08-16 14:19:59,255 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:19:59,256 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:19:59,256 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-09-30 00:00:00', freq='M'), 4544, 1)
+2017-08-16 14:20:01,421 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:01,422 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:01,422 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-10-31 00:00:00', freq='M'), 4553, 1)
+2017-08-16 14:20:03,583 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:03,584 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:03,585 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-11-30 00:00:00', freq='M'), 4508, 1)
+2017-08-16 14:20:05,813 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:05,813 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:05,814 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-12-31 00:00:00', freq='M'), 4696, 1)
+2017-08-16 14:20:07,945 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:07,946 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:07,946 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-01-31 00:00:00', freq='M'), 4915, 1)
+2017-08-16 14:20:10,163 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:10,164 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:10,164 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-02-28 00:00:00', freq='M'), 4255, 1)
+2017-08-16 14:20:12,332 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:12,332 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:12,333 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-03-31 00:00:00', freq='M'), 4632, 1)
+2017-08-16 14:20:14,563 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:14,564 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:14,564 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-04-30 00:00:00', freq='M'), 4428, 1)
+2017-08-16 14:20:16,823 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:16,823 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:16,824 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-05-31 00:00:00', freq='M'), 4850, 1)
+2017-08-16 14:20:19,044 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:19,045 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:19,045 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-06-30 00:00:00', freq='M'), 4473, 1)
+2017-08-16 14:20:21,245 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:21,246 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:21,246 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-07-31 00:00:00', freq='M'), 4894, 1)
+2017-08-16 14:20:23,390 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:20:23,391 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:20:23,391 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-08-31 00:00:00', freq='M'), 2314, 0)
+2017-08-16 14:20:23,391 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:26,880 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:23:26,882 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:26,883 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:23:26,883 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:23:28,198 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:23:28,200 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:28,200 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1079841f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:23:28,201 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:23:28,201 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:28,264 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:28,265 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:30,472 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:30,473 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:30,473 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-02-29 00:00:00', freq='M'), 4572, 1)
+2017-08-16 14:23:33,224 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:33,225 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:33,225 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-03-31 00:00:00', freq='M'), 4573, 1)
+2017-08-16 14:23:35,408 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:35,408 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:35,409 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-04-30 00:00:00', freq='M'), 4459, 1)
+2017-08-16 14:23:37,597 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:37,597 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:37,597 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-05-31 00:00:00', freq='M'), 4627, 1)
+2017-08-16 14:23:39,787 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:39,788 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:39,788 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-06-30 00:00:00', freq='M'), 4450, 1)
+2017-08-16 14:23:42,970 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:42,970 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:42,971 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-07-31 00:00:00', freq='M'), 4370, 1)
+2017-08-16 14:23:45,117 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:45,117 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:45,118 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-08-31 00:00:00', freq='M'), 4643, 1)
+2017-08-16 14:23:47,293 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:47,293 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:47,293 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-09-30 00:00:00', freq='M'), 4544, 1)
+2017-08-16 14:23:49,464 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:49,464 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:49,464 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-10-31 00:00:00', freq='M'), 4553, 1)
+2017-08-16 14:23:51,679 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:51,680 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:51,680 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-11-30 00:00:00', freq='M'), 4508, 1)
+2017-08-16 14:23:53,895 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:53,896 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:53,896 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2016-12-31 00:00:00', freq='M'), 4696, 1)
+2017-08-16 14:23:56,136 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:56,136 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:56,136 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-01-31 00:00:00', freq='M'), 4915, 1)
+2017-08-16 14:23:58,275 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:23:58,275 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:23:58,276 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-02-28 00:00:00', freq='M'), 4255, 1)
+2017-08-16 14:24:00,663 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:24:00,663 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:24:00,664 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-03-31 00:00:00', freq='M'), 4632, 1)
+2017-08-16 14:24:02,864 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:24:02,864 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:24:02,864 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-04-30 00:00:00', freq='M'), 4428, 1)
+2017-08-16 14:24:05,079 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:24:05,079 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:24:05,080 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-05-31 00:00:00', freq='M'), 4850, 1)
+2017-08-16 14:24:07,295 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:24:07,296 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:24:07,296 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-06-30 00:00:00', freq='M'), 4473, 1)
+2017-08-16 14:24:09,442 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:24:09,443 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:24:09,444 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-07-31 00:00:00', freq='M'), 4894, 1)
+2017-08-16 14:24:11,668 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:24:11,669 ERROR DBHelper logger.error  # sqlite3 Error: Error binding parameter 0 - probably unsupported type.
+2017-08-16 14:24:11,670 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  (Timestamp('2017-08-31 00:00:00', freq='M'), 2314, 0)
+2017-08-16 14:24:11,671 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:25:58,560 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:25:58,562 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:25:58,563 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:25:58,563 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:26:00,035 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:26:00,038 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:26:00,038 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x107bcb1f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:26:00,039 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:26:00,039 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:26:00,092 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:26:00,092 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:26:03,151 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:26:03,152 ERROR DBHelper logger.error  # sqlite3 Error: NOT NULL constraint failed: BLOCK.ID
+2017-08-16 14:26:03,152 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:26:05,334 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:26:05,335 ERROR DBHelper logger.error  # sqlite3 Error: NOT NULL constraint failed: BLOCK.ID
+2017-08-16 14:26:05,335 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:26:07,512 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:26:07,512 ERROR DBHelper logger.error  # sqlite3 Error: NOT NULL constraint failed: BLOCK.ID
+2017-08-16 14:26:07,512 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:27:46,683 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:27:46,685 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:46,686 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:27:46,686 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:27:48,039 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:27:48,040 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:48,040 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10b21a1f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:27:48,040 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:27:48,041 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:48,085 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:48,086 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:50,340 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:50,341 ERROR DBHelper logger.error  # sqlite3 Error: NOT NULL constraint failed: BLOCK.ID
+2017-08-16 14:27:50,341 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:27:53,327 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:53,328 ERROR DBHelper logger.error  # sqlite3 Error: NOT NULL constraint failed: BLOCK.ID
+2017-08-16 14:27:53,328 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:27:55,556 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:27:55,557 ERROR DBHelper logger.error  # sqlite3 Error: NOT NULL constraint failed: BLOCK.ID
+2017-08-16 14:27:55,558 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:29:38,605 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:29:38,606 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:38,608 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:29:38,608 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:29:40,042 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:29:40,043 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:40,044 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x105b0a1f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:29:40,044 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:29:40,044 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:40,097 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:40,098 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:42,398 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:42,401 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:29:42,402 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:29:44,596 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:44,598 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:29:44,599 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:29:46,747 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:46,750 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:29:46,750 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:29:49,825 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:49,828 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-05-31 00:00:00', 4627, 1)
+2017-08-16 14:29:49,828 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-05-31 00:00:00', 4627, 1)
+2017-08-16 14:29:51,996 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:51,999 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-06-30 00:00:00', 4450, 1)
+2017-08-16 14:29:52,000 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-06-30 00:00:00', 4450, 1)
+2017-08-16 14:29:54,196 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:54,199 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-07-31 00:00:00', 4370, 1)
+2017-08-16 14:29:54,199 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-07-31 00:00:00', 4370, 1)
+2017-08-16 14:29:56,379 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:56,382 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-08-31 00:00:00', 4643, 1)
+2017-08-16 14:29:56,382 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-08-31 00:00:00', 4643, 1)
+2017-08-16 14:29:58,550 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:29:58,551 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-09-30 00:00:00', 4544, 1)
+2017-08-16 14:29:58,551 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-09-30 00:00:00', 4544, 1)
+2017-08-16 14:30:01,517 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:01,519 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-10-31 00:00:00', 4553, 1)
+2017-08-16 14:30:01,519 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-10-31 00:00:00', 4553, 1)
+2017-08-16 14:30:04,032 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:04,035 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-11-30 00:00:00', 4508, 1)
+2017-08-16 14:30:04,035 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-11-30 00:00:00', 4508, 1)
+2017-08-16 14:30:06,449 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:06,452 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-12-31 00:00:00', 4696, 1)
+2017-08-16 14:30:06,452 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-12-31 00:00:00', 4696, 1)
+2017-08-16 14:30:08,648 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:08,650 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-01-31 00:00:00', 4915, 1)
+2017-08-16 14:30:08,651 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-01-31 00:00:00', 4915, 1)
+2017-08-16 14:30:11,029 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:11,031 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-02-28 00:00:00', 4255, 1)
+2017-08-16 14:30:11,032 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-02-28 00:00:00', 4255, 1)
+2017-08-16 14:30:13,221 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:13,224 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-03-31 00:00:00', 4632, 1)
+2017-08-16 14:30:13,224 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-03-31 00:00:00', 4632, 1)
+2017-08-16 14:30:16,228 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:16,231 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-04-30 00:00:00', 4428, 1)
+2017-08-16 14:30:16,231 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-04-30 00:00:00', 4428, 1)
+2017-08-16 14:30:18,502 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:18,505 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-05-31 00:00:00', 4850, 1)
+2017-08-16 14:30:18,505 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-05-31 00:00:00', 4850, 1)
+2017-08-16 14:30:20,727 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:20,729 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-06-30 00:00:00', 4473, 1)
+2017-08-16 14:30:20,730 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-06-30 00:00:00', 4473, 1)
+2017-08-16 14:30:22,896 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:22,899 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-07-31 00:00:00', 4894, 1)
+2017-08-16 14:30:22,899 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-07-31 00:00:00', 4894, 1)
+2017-08-16 14:30:25,070 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:30:25,073 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-08-31 00:00:00', 2314, 0)
+2017-08-16 14:30:25,073 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-08-31 00:00:00', 2314, 0)
+2017-08-16 14:30:25,074 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:20,875 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:31:20,878 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:20,880 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:31:20,880 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:31:22,262 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:31:22,263 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:22,263 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10672d1f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:31:22,264 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:31:22,264 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:22,311 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:22,311 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:24,510 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:24,514 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:31:24,514 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:31:26,760 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:26,763 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:31:26,763 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:31:28,946 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:28,949 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:31:28,949 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:31:31,397 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:31,400 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-05-31 00:00:00', 4627, 1)
+2017-08-16 14:31:31,401 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-05-31 00:00:00', 4627, 1)
+2017-08-16 14:31:34,969 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:34,972 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-06-30 00:00:00', 4450, 1)
+2017-08-16 14:31:34,972 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-06-30 00:00:00', 4450, 1)
+2017-08-16 14:31:37,490 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:37,493 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-07-31 00:00:00', 4370, 1)
+2017-08-16 14:31:37,493 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-07-31 00:00:00', 4370, 1)
+2017-08-16 14:31:40,046 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:40,049 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-08-31 00:00:00', 4643, 1)
+2017-08-16 14:31:40,049 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-08-31 00:00:00', 4643, 1)
+2017-08-16 14:31:42,781 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:42,783 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-09-30 00:00:00', 4544, 1)
+2017-08-16 14:31:42,783 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-09-30 00:00:00', 4544, 1)
+2017-08-16 14:31:44,989 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:44,992 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-10-31 00:00:00', 4553, 1)
+2017-08-16 14:31:44,992 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-10-31 00:00:00', 4553, 1)
+2017-08-16 14:31:47,221 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:47,224 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-11-30 00:00:00', 4508, 1)
+2017-08-16 14:31:47,224 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-11-30 00:00:00', 4508, 1)
+2017-08-16 14:31:50,148 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:50,150 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-12-31 00:00:00', 4696, 1)
+2017-08-16 14:31:50,150 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-12-31 00:00:00', 4696, 1)
+2017-08-16 14:31:52,400 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:52,403 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-01-31 00:00:00', 4915, 1)
+2017-08-16 14:31:52,404 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-01-31 00:00:00', 4915, 1)
+2017-08-16 14:31:54,789 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:54,791 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-02-28 00:00:00', 4255, 1)
+2017-08-16 14:31:54,791 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-02-28 00:00:00', 4255, 1)
+2017-08-16 14:31:57,359 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:57,362 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-03-31 00:00:00', 4632, 1)
+2017-08-16 14:31:57,362 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-03-31 00:00:00', 4632, 1)
+2017-08-16 14:31:59,611 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:31:59,615 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-04-30 00:00:00', 4428, 1)
+2017-08-16 14:31:59,615 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-04-30 00:00:00', 4428, 1)
+2017-08-16 14:32:01,799 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:32:01,801 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-05-31 00:00:00', 4850, 1)
+2017-08-16 14:32:01,801 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-05-31 00:00:00', 4850, 1)
+2017-08-16 14:32:04,066 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:32:04,068 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-06-30 00:00:00', 4473, 1)
+2017-08-16 14:32:04,069 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-06-30 00:00:00', 4473, 1)
+2017-08-16 14:32:06,363 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:32:06,366 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-07-31 00:00:00', 4894, 1)
+2017-08-16 14:32:06,366 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-07-31 00:00:00', 4894, 1)
+2017-08-16 14:32:08,798 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:32:08,800 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-08-31 00:00:00', 2314, 0)
+2017-08-16 14:32:08,801 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-08-31 00:00:00', 2314, 0)
+2017-08-16 14:32:08,801 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:32:08,830 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is                    time  quantity
+0   2016-02-29 00:00:00      4572
+1   2016-03-31 00:00:00      4573
+2   2016-04-30 00:00:00      4459
+3   2016-05-31 00:00:00      4627
+4   2016-06-30 00:00:00      4450
+5   2016-07-31 00:00:00      4370
+6   2016-08-31 00:00:00      4643
+7   2016-09-30 00:00:00      4544
+8   2016-10-31 00:00:00      4553
+9   2016-11-30 00:00:00      4508
+10  2016-12-31 00:00:00      4696
+11  2017-01-31 00:00:00      4915
+12  2017-02-28 00:00:00      4255
+13  2017-03-31 00:00:00      4632
+14  2017-04-30 00:00:00      4428
+15  2017-05-31 00:00:00      4850
+16  2017-06-30 00:00:00      4473
+17  2017-07-31 00:00:00      4894
+18  2017-08-31 00:00:00      2314
+19  2016-02-29 00:00:00      4572
+20  2016-03-31 00:00:00      4573
+21  2016-04-30 00:00:00      4459
+22  2016-05-31 00:00:00      4627
+23  2016-06-30 00:00:00      4450
+24  2016-07-31 00:00:00      4370
+25  2016-08-31 00:00:00      4643
+26  2016-09-30 00:00:00      4544
+27  2016-10-31 00:00:00      4553
+28  2016-11-30 00:00:00      4508
+29  2016-12-31 00:00:00      4696
+30  2017-01-31 00:00:00      4915
+31  2017-02-28 00:00:00      4255
+32  2017-03-31 00:00:00      4632
+33  2017-04-30 00:00:00      4428
+34  2017-05-31 00:00:00      4850
+35  2017-06-30 00:00:00      4473
+36  2017-07-31 00:00:00      4894
+37  2017-08-31 00:00:00      2314
+2017-08-16 14:33:42,201 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:33:42,203 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:33:42,204 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:33:42,204 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:33:43,804 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:33:43,805 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:33:43,806 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x111c031f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:33:43,806 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:33:43,806 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:33:43,857 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:33:43,858 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:33:45,951 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:33:45,954 INFO DBHelper logger.info  # update success: 
+                update block set quantity =?, is_update=? where time=?     
+                  (2314, 0, '2017-08-31 00:00:00')
+2017-08-16 14:33:45,955 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                update block set quantity =?, is_update=? where time=?     
+                  (2314, 0, '2017-08-31 00:00:00')
+2017-08-16 14:33:45,955 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:33:45,973 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is                    time  quantity
+0   2016-02-29 00:00:00      4572
+1   2016-03-31 00:00:00      4573
+2   2016-04-30 00:00:00      4459
+3   2016-05-31 00:00:00      4627
+4   2016-06-30 00:00:00      4450
+5   2016-07-31 00:00:00      4370
+6   2016-08-31 00:00:00      4643
+7   2016-09-30 00:00:00      4544
+8   2016-10-31 00:00:00      4553
+9   2016-11-30 00:00:00      4508
+10  2016-12-31 00:00:00      4696
+11  2017-01-31 00:00:00      4915
+12  2017-02-28 00:00:00      4255
+13  2017-03-31 00:00:00      4632
+14  2017-04-30 00:00:00      4428
+15  2017-05-31 00:00:00      4850
+16  2017-06-30 00:00:00      4473
+17  2017-07-31 00:00:00      4894
+18  2017-08-31 00:00:00      2314
+19  2016-02-29 00:00:00      4572
+20  2016-03-31 00:00:00      4573
+21  2016-04-30 00:00:00      4459
+22  2016-05-31 00:00:00      4627
+23  2016-06-30 00:00:00      4450
+24  2016-07-31 00:00:00      4370
+25  2016-08-31 00:00:00      4643
+26  2016-09-30 00:00:00      4544
+27  2016-10-31 00:00:00      4553
+28  2016-11-30 00:00:00      4508
+29  2016-12-31 00:00:00      4696
+30  2017-01-31 00:00:00      4915
+31  2017-02-28 00:00:00      4255
+32  2017-03-31 00:00:00      4632
+33  2017-04-30 00:00:00      4428
+34  2017-05-31 00:00:00      4850
+35  2017-06-30 00:00:00      4473
+36  2017-07-31 00:00:00      4894
+37  2017-08-31 00:00:00      2314
+2017-08-16 14:34:18,285 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:34:18,287 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:18,288 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:34:18,288 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:34:19,808 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:34:19,809 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:19,810 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x1111101f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:34:19,810 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:34:19,810 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:19,864 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:19,865 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:22,319 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:22,322 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:34:22,323 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-02-29 00:00:00', 4572, 1)
+2017-08-16 14:34:24,542 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:24,544 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:34:24,545 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-03-31 00:00:00', 4573, 1)
+2017-08-16 14:34:27,507 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:27,508 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:34:27,508 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-04-30 00:00:00', 4459, 1)
+2017-08-16 14:34:29,992 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:29,995 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-05-31 00:00:00', 4627, 1)
+2017-08-16 14:34:29,995 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-05-31 00:00:00', 4627, 1)
+2017-08-16 14:34:33,005 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:33,007 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-06-30 00:00:00', 4450, 1)
+2017-08-16 14:34:33,007 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-06-30 00:00:00', 4450, 1)
+2017-08-16 14:34:35,194 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:35,196 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-07-31 00:00:00', 4370, 1)
+2017-08-16 14:34:35,196 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-07-31 00:00:00', 4370, 1)
+2017-08-16 14:34:37,340 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:37,342 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-08-31 00:00:00', 4643, 1)
+2017-08-16 14:34:37,343 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-08-31 00:00:00', 4643, 1)
+2017-08-16 14:34:39,519 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:39,521 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-09-30 00:00:00', 4544, 1)
+2017-08-16 14:34:39,522 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-09-30 00:00:00', 4544, 1)
+2017-08-16 14:34:41,706 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:41,708 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-10-31 00:00:00', 4553, 1)
+2017-08-16 14:34:41,709 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-10-31 00:00:00', 4553, 1)
+2017-08-16 14:34:43,930 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:43,941 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-11-30 00:00:00', 4508, 1)
+2017-08-16 14:34:43,941 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-11-30 00:00:00', 4508, 1)
+2017-08-16 14:34:46,162 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:46,166 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-12-31 00:00:00', 4696, 1)
+2017-08-16 14:34:46,166 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2016-12-31 00:00:00', 4696, 1)
+2017-08-16 14:34:48,403 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:48,406 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-01-31 00:00:00', 4915, 1)
+2017-08-16 14:34:48,406 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-01-31 00:00:00', 4915, 1)
+2017-08-16 14:34:50,588 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:50,592 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-02-28 00:00:00', 4255, 1)
+2017-08-16 14:34:50,592 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-02-28 00:00:00', 4255, 1)
+2017-08-16 14:34:53,647 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:53,650 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-03-31 00:00:00', 4632, 1)
+2017-08-16 14:34:53,651 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-03-31 00:00:00', 4632, 1)
+2017-08-16 14:34:55,795 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:55,797 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-04-30 00:00:00', 4428, 1)
+2017-08-16 14:34:55,797 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-04-30 00:00:00', 4428, 1)
+2017-08-16 14:34:57,985 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:34:57,989 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-05-31 00:00:00', 4850, 1)
+2017-08-16 14:34:57,990 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-05-31 00:00:00', 4850, 1)
+2017-08-16 14:35:00,253 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:35:00,256 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-06-30 00:00:00', 4473, 1)
+2017-08-16 14:35:00,256 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-06-30 00:00:00', 4473, 1)
+2017-08-16 14:35:02,485 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:35:02,488 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-07-31 00:00:00', 4894, 1)
+2017-08-16 14:35:02,488 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-07-31 00:00:00', 4894, 1)
+2017-08-16 14:35:04,658 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:35:04,662 INFO DBHelper logger.info  # update success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-08-31 00:00:00', 2314, 0)
+2017-08-16 14:35:04,662 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  ('2017-08-31 00:00:00', 2314, 0)
+2017-08-16 14:35:04,663 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:35:04,685 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is                    time  quantity
+0   2016-02-29 00:00:00      4572
+1   2016-03-31 00:00:00      4573
+2   2016-04-30 00:00:00      4459
+3   2016-05-31 00:00:00      4627
+4   2016-06-30 00:00:00      4450
+5   2016-07-31 00:00:00      4370
+6   2016-08-31 00:00:00      4643
+7   2016-09-30 00:00:00      4544
+8   2016-10-31 00:00:00      4553
+9   2016-11-30 00:00:00      4508
+10  2016-12-31 00:00:00      4696
+11  2017-01-31 00:00:00      4915
+12  2017-02-28 00:00:00      4255
+13  2017-03-31 00:00:00      4632
+14  2017-04-30 00:00:00      4428
+15  2017-05-31 00:00:00      4850
+16  2017-06-30 00:00:00      4473
+17  2017-07-31 00:00:00      4894
+18  2017-08-31 00:00:00      2314
+2017-08-16 14:37:20,765 INFO 1hash-txinfo.py logger.info  # getting pages = 45, total_count: 2218
+2017-08-16 14:37:20,767 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:37:20,768 INFO 1hash-txinfo.py logger.info  # get latest txinfo: 2017-08-16 05:14:09
+2017-08-16 14:37:20,768 INFO 1hash-txinfo.py logger.info  # get blockinfo, page: 1
+2017-08-16 14:37:22,077 INFO 1hash-txinfo.py logger.info  # requesting: https://chain.api.btc.com/v3/address/1F1xcRt8H8Wa623KqmkEontwAAVqDSAWCV/tx?page=1
+2017-08-16 14:37:22,078 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:37:22,079 INFO DBHelper logger.info  # batch_insert success: <sqlite3.Cursor object at 0x10a4821f0>, insert into income (time, txid, balance_diff, fee, is_coinbase, outputs_count) VALUES (?,?,?,?,?,?);
+2017-08-16 14:37:22,079 INFO 1hash-txinfo.py logger.info  # updated 0 txinfo
+2017-08-16 14:37:22,079 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:37:22,134 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:37:22,135 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:37:24,286 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:37:24,289 INFO DBHelper logger.info  # update success: 
+                update block set quantity =?, is_update=? where time=?     
+                  (2315, 0, '2017-08-31 00:00:00')
+2017-08-16 14:37:24,289 INFO 1hash-txinfo.py logger.info  # update block-quantity success: 
+                update block set quantity =?, is_update=? where time=?     
+                  (2315, 0, '2017-08-31 00:00:00')
+2017-08-16 14:37:24,289 INFO DBHelper logger.info  # connected sqlite3 success
+2017-08-16 14:37:24,304 INFO 1hash-txinfo.py logger.info  # add block_monthly success: num is                    time  quantity
+0   2016-02-29 00:00:00      4572
+1   2016-03-31 00:00:00      4573
+2   2016-04-30 00:00:00      4459
+3   2016-05-31 00:00:00      4627
+4   2016-06-30 00:00:00      4450
+5   2016-07-31 00:00:00      4370
+6   2016-08-31 00:00:00      4643
+7   2016-09-30 00:00:00      4544
+8   2016-10-31 00:00:00      4553
+9   2016-11-30 00:00:00      4508
+10  2016-12-31 00:00:00      4696
+11  2017-01-31 00:00:00      4915
+12  2017-02-28 00:00:00      4255
+13  2017-03-31 00:00:00      4632
+14  2017-04-30 00:00:00      4428
+15  2017-05-31 00:00:00      4850
+16  2017-06-30 00:00:00      4473
+17  2017-07-31 00:00:00      4894
+18  2017-08-31 00:00:00      2315

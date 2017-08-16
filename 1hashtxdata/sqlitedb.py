@@ -21,29 +21,35 @@ conn = sqlite3.connect('tx.db')
 #
 # conn.execute('''CREATE INDEX index_time
 #        ON income (time);''')
-# conn.execute('''CREATE TABLE PAYOUT
-#        (ID INT PRIMARY KEY     NOT NULL,
+# conn.execute('''CREATE TABLE BLOCK
+#        (ID            INT PRIMARY KEY    ,
 #        time           TEXT    NOT NULL,
-#        txid           TEXT     NOT NULL,
-#        tx_value         decimal(12,8));''')
-# insert into income values (0,'2016-02-19 18:42:38',0,0,0,0,0) ;
-sql = 'select * from income'
-# print conn.execute(sql).fetchall()
+#        quantity       int     NOT NULL,
+#        is_update      int     NOT NULL);''')
+# conn.execute('''CREATE INDEX block_time
+#        ON BLOCK (time);''')
+# insert into income values (0,'2016-02-19 00:00:00',0,0,0,0,0) ;
+sql = 'select time from income where is_coinbase=1 limit 2'
+for i in (conn.execute(sql).fetchall()):
+    print(''.join(i))
 #
 df = pd.read_sql(sql, conn)  # index_col=['id','time']
+
 df = df.set_index(pd.DatetimeIndex(df['time']))
-print(df.index.year.unique())
-print(df['2017'])
+for i in df.index:
+    print i
+# print(df.index.year.unique())
+# print(df['2017'])
 # pd.io.sql.write_frame(df, 'tablename', conn)
 conn.close()
 # df_s = df.sort_index(ascending=False)   # sort --> df_s
-df_s = df[['time', 'fee']]  # .groupby(['is_coinbase']).cumsum()
+# df_s = df[['time', 'fee']]  # .groupby(['is_coinbase']).cumsum()
 # key = lambda x: x.year
 # grouped = df_s.groupby(key).sum()
 # print(grouped)
 # grouper = pd.TimeGrouper("1M")
 # df_s['sum1'] = df_s.groupby(grouper).transform(lambda x: x.sum())
-df_s.loc[:, 'fee'].head()
+# df_s.loc[:, 'fee'].head()
 
 # writer = pd.ExcelWriter('1hash_tx_dada_%s.xlsx' % get_time())
 # df_s.to_excel(writer, 'Sheet1')  # sheet_name='Sheet1'

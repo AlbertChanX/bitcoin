@@ -59,6 +59,11 @@ def application(df, df2):
                     x=xtime,
                     y=dff['payout'],
                     name='Payoff'
+                ),
+                go.Bar(
+                    x=xtime,
+                    y=dff['Net_profit'],
+                    name='Net Profit'
                 )
             ],
             'layout': go.Layout(

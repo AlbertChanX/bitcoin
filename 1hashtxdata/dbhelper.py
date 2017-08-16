@@ -57,14 +57,13 @@ class DBHelper(object):
             cur = self.con.cursor()
             count = cur.execute(sql, params)
             self.con.commit()
-            log.info('insert success: %s' % sql)
+            log.info('update success: {}{}'.format(sql, params))
             return count
         except sqlite3.Error, e:
             self.con.rollback()
             cur.close()
             self.con.close()
             log.error("sqlite3 Error: %s" % e)
-
 
     # update with sql
 

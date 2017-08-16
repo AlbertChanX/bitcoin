@@ -60,7 +60,7 @@ def get_block_num_monthly(dttime):   # 2017-6-30
         eom = get_blockheight(months(dt, +1))  # 2017-07-30
         print('eom, ', eom)
         num_monthly = eom - bom
-        return num_monthly
+        return num_monthly, 1
     else:  # 返回当月
         month = t.tm_mon
         bom = get_blockheight(time.strftime('%Y%m%d', t))
@@ -70,7 +70,7 @@ def get_block_num_monthly(dttime):   # 2017-6-30
         num_monthly = blockh_recent - bom
 
         print('blockh_recent, ', blockh_recent)
-        return num_monthly
+        return num_monthly, 0
 
 if __name__ == "__main__":
 

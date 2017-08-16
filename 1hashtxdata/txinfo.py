@@ -1,6 +1,5 @@
 # coding:utf-8
 from request_tools import my_req
-import time
 # from openpyxl import Workbook
 import pandas as pd
 from timetools import get_time
@@ -10,6 +9,17 @@ import logger
 import math
 
 log = logger.get_logger('1hash-txinfo.py')
+
+
+def subsidy(height):
+    return (50 * 100000000 >> (height + 1) // 210000)/100000000.0
+
+
+def tuple2list(list_t):
+    tmp = []
+    for i in list_t:
+        tmp.append(''.join(i))
+    return tmp
 
 
 class Data(object):
@@ -26,34 +36,41 @@ class Data(object):
         log.info('getting pages = %s, total_count: %s' % (page, count))
         return page
 
-    def get_latest(self, type='tx'):
-        if type == 'tx':
+    def get_latest(self, tx_type='tx'):
+        if tx_type == 'tx':
             sql = 'select * from INCOME order by time desc limit 1'
-            t = DBHelper().select(sql)
-            return t
-        else:
-            return None
+        # get the time for insert the time that not in db
+        elif tx_type == 'block':
+            sql = 'select time from BLOCK order by time desc'
+        # get the time that is_update=0 for update
+        elif tx_type == 'block_updating':
+            sql = 'select time from BLOCK where is_update=0 order by time desc'
+        t = DBHelper().select(sql)
+        return t
 
     def get_tx(self):
         tx_list = []
         pages = self.get_page()
-        latest = self.get_latest(type='tx')[0][1]
-        if len(latest) == 0:
-            latest = None
+        try:
+            latest = self.get_latest(tx_type='tx')[0][1]
+            log.info('get latest txinfo: %s' % latest)
+        except IndexError:
+            latest = 0
         for i in range(pages):
             url = self.url % (i+1)
             log.info('get blockinfo, page: %s' % (i+1))
             flag = 0
-            # session = requests.Session()
-            # session.trust_env = False
             js = my_req(url)
             log.info('requesting: %s' % url)
-            time.sleep(1.5)
+
             for tx in js['data']['list']:
+                if tx['block_time'] == 0:
+                    continue
                 tmp = []
+                print('latest ', latest)
                 ts = ts2time(tx['block_time'])
+                print('ts ', ts)
                 if ts > latest:
-                    # print('latest ', latest)
                     txid = tx['hash']
                     balance_diff = tx['balance_diff']/100000000.0
                     # print ts, txid, balance
@@ -61,9 +78,11 @@ class Data(object):
                     outputs = tx['outputs_count']
                     if is_cb:
                         is_cb = 1
+                        sub = subsidy(tx['block_height'])
+                        fee = balance_diff - sub
                     else:
                         is_cb = 0
-                    fee = balance_diff - 12.5
+                        fee = 0
                     tmp.append(ts)
                     tmp.append(txid)
                     tmp.append(balance_diff)
@@ -83,17 +102,27 @@ class Data(object):
               "(time, txid, balance_diff, fee, is_coinbase, outputs_count) " \
               "VALUES (?,?,?,?,?,?);"
         DBHelper().batch_insert(sql, value_list)
-        log.info('updated %s tx' % len(value_list))
+        print(value_list)
+        log.info('updated %s txinfo' % len(value_list))
 
-    def get_block_info(self):
-        pass
+    def update_block_monthly(self, block_tuple, is_insert=1):
+        if is_insert == 1:
+            sql = '''
+                  insert into block (time, quantity, is_update) VALUES (?,?,?)      
+                  '''
+        else:
+            sql = '''
+                update block set quantity =?, is_update=? where time=?     
+                  '''
+        DBHelper().updateByParam(sql, block_tuple)
+        log.info('update block-quantity success: {}{}'.format(sql, block_tuple))
 
     def group_result(self, year=None):
-        special = ['f821d41e7840f7c9122793a80399c2e79b543de79653eedcd3f89a44fad4038d',
-                   'acc8a78ec434cdfa259edbea5befb186ab3e569e8e7c0d466714d3b477d4148e',
-                   '82923bff6443459c4039f6e66b651703c7b0528a7e6bab933d6c47d8673a3f41',
+        special = [
                    '2d74f0c4deb7f250fe0e526fe1c63b0534b7d659ee96d9db4235cc3b363f11bd',
-                   '5d97f3052edaa9676add54e5c7b4aa3549370083beb5035dfabf64d209e1f258']
+                   '5d97f3052edaa9676add54e5c7b4aa3549370083beb5035dfabf64d209e1f258',
+                   'f359467888edb00309c3713566593c1e33ecfc2e26f7f7be1f4052d756e3aed0',
+                   'f359467888edb00309c3713566593c1e33ecfc2e26f7f7be1f4052d756e3aed0']
         con = DBHelper().get_con()
         sql = 'select time, txid, balance_diff, ' \
               'fee, is_coinbase from income'
@@ -111,35 +140,60 @@ class Data(object):
         df_month = df_s.resample('M').sum()
 
         # 支付总数
-        df_pay = df[(df['is_coinbase'] == 0) & (df['balance_diff'] < 0) &
-                    (-df['txid'].isin(special))][['time', 'balance_diff']]
+        df_pay = df[(df['balance_diff'] < 0) & (-df['txid'].isin(special))]
+        df_pay = df_pay[['balance_diff']]
         if year is not None:
             df_pay = df_pay[year]
-        df_pay = df_pay.resample('M').sum()
-        df_month['payout'] = df_pay['balance_diff']
-        # print(df_month)
+        print(df_month)
+        df_pay_month = df_pay.resample('M').sum()  # assign to other var
 
-        # block_monthly   获取每月出块数量， 消耗时间较长
+        df_pay_month.columns = ['payout']
+        print(df_pay_month)
+        df_month = df_pay_month.join(df_month)
+        # adjust position of column 'payout'
+        payout = df_month['payout']
+        df_month.drop(labels=['payout'], axis=1, inplace=True)
+        df_month['payout'] = payout
+        df_month = df_month.fillna(0)
+        print(df_month)
+
+        # block_monthly   获取每月出块数量
         from request_tools import get_block_num_monthly
-        block_monthly = []
-        # for month in df_month.index:
-        #     num = get_block_num_monthly(str(month)[:10])
-        #     block_monthly.append(num)
-        # df_month['block_monthly'] = block_monthly
-        log.info('add block_monthly success: num is %s' % len(block_monthly))
+        block_time = self.get_latest(tx_type='block')  # like [tuple]
+        block_time = tuple2list(block_time)
+        #  get block that is_update = 0
+        block_updating = self.get_latest(tx_type='block_updating')
+        block_updating = tuple2list(block_updating)
+        for month in df_month.index:
+            if str(month) not in block_time:
+                num, is_update = get_block_num_monthly(str(month)[:10])
+                self.update_block_monthly((str(month), num, is_update), is_insert=1)  # insert
+            elif str(month) in block_updating:
+                num, is_update = get_block_num_monthly(str(month)[:10])
+                self.update_block_monthly((num, is_update, str(month)), is_insert=0)  # update
+        # get block_monthly from db
+        con = DBHelper().get_con()
+        sql = 'select time, quantity from block'
+        df_block = pd.read_sql(sql, con)
+        # df_block = df_block.set_index(pd.DatetimeIndex(df['time']))
+        con.close()
+        df_month['block_monthly'] = df_block['quantity'].tolist()
+        log.info('add block_monthly success: num is %s' % df_block)
 
-        # 流水明细
+        # balance details
         df_detail = df.sort_index()
-        print(df_detail)
         df_detail = df_detail.drop(['is_coinbase'], axis=1)
         df_detail['balance'] = df_detail['balance_diff'].cumsum()
+
+        # add Net Profit
+        df_month['Net_profit'] = df_month['balance_diff'] + df_month['payout']
 
         # save to excel
         writer = pd.ExcelWriter('data/1hash_tx_dada_%s.xlsx' % get_time())
         df_month_group = df_month.copy()
         tmp = df_month_group.reset_index(drop=True).sum(axis=0)
         df_month_group.loc['Column_sum'] = tmp
-        # df_month_group.loc['Column_sum'] = df_month_group.apply(lambda x: x.sum())  # axis=1)
+        df_month_group.columns = [u'块总收入', u'块手续费收入', u'出块数量',u'支付总数',u'全网出块数量',u'净利润']
         df_month_group.to_excel(writer, sheet_name=u'汇总结果')
         df_detail.to_excel(writer, sheet_name=u'流水明细表')
         writer.save()
