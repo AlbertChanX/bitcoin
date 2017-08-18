@@ -6,6 +6,20 @@ from contextlib import contextmanager
 log = logger.get_logger('DBHelper')
 
 
+@contextmanager
+def connector():
+    print("connecting to sqlite3")
+    try:
+       con = sqlite3.connect('tx.db')
+    except:
+        pass
+    cur = con.cursor()
+    yield cur
+    print("closing connection")
+    cur.close()
+    con.close()
+
+
 class DBHelper(object):
     def __init__(self):
         try:
@@ -19,19 +33,10 @@ class DBHelper(object):
     def get_con(self):
         return self.con
 
-    @contextmanager
-    def connector(self):
-        print("connecting to sqlite3")
-        con = self.con
-        cur = con.cursor()
-        yield cur
-        print("closing connection")
-        cur.close()
-        con.close()
-
     # 查询方法，使用con.cursor(MySQLdb.cursors.DictCursor),返回结果为字典
-    def select(self, sql):
-        with DBHelper.connector(self) as cur:
+    @classmethod
+    def select(cls, sql):
+        with connector() as cur:
             cur.execute(sql)
             fc = cur.fetchall()
             return fc
