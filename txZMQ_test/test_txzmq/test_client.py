@@ -17,15 +17,15 @@ with open('block.json', 'r') as f:
     data = json.dumps(data) 
     sdata['data'] = data
 
+
 class Client(object):
-    def __init__(self,s,name):
+    def __init__(self, s, name):
         self.s = s
         self.name = name
         
     def request(self):
         def produce():
             print("Requesting  from %s" % (self.name))
-
             try:
                 global num
                 num += 1 
@@ -45,11 +45,11 @@ class Client(object):
                     
                     self.s.shutdown()
                     self.s = ZmqREQConnection(zf, ZmqEndpoint('connect', s_ip))
-                    self.s.sendMsg(json.dumps({'time':time.time(),'name':self.name }))
+                    self.s.sendMsg(json.dumps({'time': time.time(), 'name': self.name }))
                 d.addCallback(doPrint).addErrback(onTimeout)
             except zmq.error.Again:
                 print("Skipping, no consumers...")
-            #reactor.callLater(20, produce)
+            # reactor.callLater(20, produce)
         reactor.callWhenRunning(produce)
 
 
@@ -70,11 +70,12 @@ def test():
     start = time.time()
     print('begin: ', start)
     for c in generate_c():
-       #print(getattr())
-       c.request()
+        # print(getattr())
+        c.request()
     end = time.time()
     print('end: ', end)
     print('total time: %s' % (end-start))
 
-reactor.callWhenRunning(test)
-reactor.run()
+if __name__ == '__main__':
+    reactor.callWhenRunning(test)
+    reactor.run()

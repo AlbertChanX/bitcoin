@@ -41,15 +41,17 @@ send = ZmqPubConnection(zf, pub)      # Pub
 
 num = 0
 # ZmqREPConnection
+
+
 def doPrint(messageId, message):  # uuid
     # if time.time() - 6.0 <= float(message):
-        #print(message[0])
+        # print(message[0])
         data = json.loads(message)
-        #print(type(data['name'].encode()))
+        # print(type(data['name'].encode()))
         print("Replying to %s, %r time is %s" % (b2str(messageId), data['name'], data['time']))
         recv.reply(messageId, "%s reply to: %s" % (b2str(messageId), data['name'].encode('utf-8')))  # reply to client (id+msg) by mId
     # pub ---> 8881
-        #print(message)
+        # print(message)
         global num
         num += 1
         # print(type(message))

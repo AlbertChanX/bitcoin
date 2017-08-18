@@ -1,9 +1,9 @@
 
-from zmq import constants
-
 from txzmq import ZmqSubConnection as zsc
-import time,json
+import time, json
 num = 0
+
+
 class ZmqSubConnection(zsc):
 
     def gotMessage(self, message, tag):
