@@ -9,4 +9,5 @@ build
 *.exe
 *.js
 *.e
-
+*.log
+*.db
