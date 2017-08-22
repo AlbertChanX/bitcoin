@@ -2,6 +2,7 @@
 ## main Coin & ICO
 * (https://www.blocktrail.com/BTC)  
 * BTC/BCC explorer
+* (https://etherscan.io/blocks)
 * (https://k.sosobtc.com/bcc_viabtc.html) BCC KLine
 
 * (https://www.coindesk.com/bitcoin-venture-capital/)

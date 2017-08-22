@@ -23,8 +23,8 @@ from selenium import webdriver
 driver = webdriver.PhantomJS()
 
 u1 = 'http://www.okcoin.cn'
-url = 'http://www.zstu.edu.cn/'
+url = 'http://www.google.com/'
 c = driver.get(url)
 time.sleep(3)
-driver.save_screenshot('screenie.png')
+driver.save_screenshot('screen.png')
 driver.close()
