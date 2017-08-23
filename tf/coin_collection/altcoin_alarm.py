@@ -2,31 +2,35 @@
 import urllib.request as request
 import asyncio, async_timeout
 import aiohttp
+import pandas as pd
 import time, json
 from selenium import webdriver
 from selenium.webdriver import DesiredCapabilities
 import re
-import logger
-
+import logger, requests, gevent
+from hdf5helper import hdf5helper
 
 logger.initialize('DEBUG', 'INFO', 'log/coin.log')
 log = logger.get_logger('alarm.py')
 desired_capabilities = DesiredCapabilities.PHANTOMJS.copy()
 ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ' \
      '(KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-desired_capabilities['phantomjs.page.settings.userAgent'] = ua
-i_headers = {'Accept-Charset': 'GBK,UTF-8;q=0.7,*;q=0.3',
-                 'User-Agent' :  'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US)'
-                                  'AppleWebKit/534.16 (KHTML, like Gecko)'
-                                  'Chrome/38.0.2125.111 Safari/537.36',
-                'Host':'k.sosobtc.com' }
 
+i_headers = {'Accept-Charset': 'GBK,UTF-8;q=0.7,*;q=0.3',
+             'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US)'
+                                'AppleWebKit/534.16 (KHTML, like Gecko)'
+                                'Chrome/38.0.2125.111 Safari/537.36',
+             'Host': 'k.sosobtc.com',
+             'Content_Length': 'null'}
+
+desired_capabilities['phantomjs.page.settings.userAgent'] = ua
 # driver = webdriver.Chrome('/Users/cyc/Downloads/chromedriver')
 
-def get_coins(step=24*60*60):
+
+def get_coins():
     driver = webdriver.PhantomJS()
     main_url = 'https://www.sosobtc.com/currencies'
-    url = 'https://k.sosobtc.com/data/period?symbol={}&step={}'
+
     driver.get(main_url)
     # driver.save_screenshot('screen.png')
     # js = 'return window.__data;'
@@ -37,35 +41,85 @@ def get_coins(step=24*60*60):
     urls = []
     for c in json.loads(dic[0])['currencyState']['currency']:
         if c['market'] in markets:
-            urls.append(url.format(c['market']+c['lowerName']+'cny', step))
+            urls.append(c['market']+c['lowerName']+'cny')
     driver.close()
     log.critical('got {} urls'.format(len(urls)))
     return urls
 
-@asyncio.coroutine
-async def getpage(url, res_list):
-    # conn = aiohttp.ProxyConnector(proxy="http://127.0.0.1:8087")
-    conn = aiohttp.TCPConnector(verify_ssl=False)
-    async with aiohttp.ClientSession(connector=conn) as session:
-        with async_timeout.timeout(60):
-            async with session.get(url, headers=i_headers) as resp:
-                log.info(resp.status)
-                assert resp.status == 200
-                log.info(url)
-                res_list.append(await (resp.text()))
+
+def getdata(coin, step=24*60*60):
+    url = 'https://k.sosobtc.com/data/period?symbol={}&step={}'.format(coin, step)
+    result = requests.get(url, headers=i_headers, timeout=60)
+    result.raise_for_status()
+    print(result.status_code)
+    result = result.json()
+    df = pd.DataFrame(result)
+    df.columns = ['time', 'open', 'high', 'low', 'close', 'volume']
+    df['name'] = coin
+    hdf5helper().put_df('coin', df)
+    return result
+t = time.time()
+tasks = []
+for url in get_coins():
+    tasks.append(gevent.spawn(getdata, url))
+
+gevent.joinall(tasks)
+print(': %s ' % (time.time()-t))
 
 
-loop = asyncio.get_event_loop()
 
-l = []
-
+# async def fetch(url, session):
+#     async with session.get(url, headers=i_headers) as response:
+#         print(response.status)
+#         if response.status == 200:
+#             html = await response.text()
+#             return {'error': '', 'html': html}
+#         else:
+#             return {'error': response.status, 'html': ''}
+#         # return await response.read()
+#
+#
+# async def bound_fetch(sem, url, session):
+#     # Getter function with semaphore.
+#     async with sem:
+#         await fetch(url, session)
+#
+# @asyncio.coroutine
+# async def getpage(urls):
+#     # conn = aiohttp.ProxyConnector(proxy="http://127.0.0.1:8087")
+#     tasks = []
+#     # create instance of Semaphore
+#     sem = asyncio.Semaphore(1000)
+#     conn = aiohttp.TCPConnector(verify_ssl=False)
+#     async with aiohttp.ClientSession(connector=conn) as session:
+#         with async_timeout.timeout(60):
+#             # async with session.get(url, headers=i_headers) as resp:
+#                 # assert resp.status == 200
+#                 for url in urls:
+#                     print(url)
+#                     # pass Semaphore and session to every GET request
+#                     task = asyncio.ensure_future(bound_fetch(sem, url, session))
+#                     tasks.append(task)
+#                 responses = asyncio.gather(*tasks)
+#                 return await responses
+#
+# loop = asyncio.get_event_loop()
+#
+# l = []
+#
 # urls = ['http://www.jubi.com/api/v1/allticker/', 'http://www.jubi.com/api/v1/orders/btc']
+#
+# tasks = [getpage(url, l) for url in get_coins()]
+# t = time.time()
+# print('start', t)
+# future = asyncio.ensure_future(getpage(get_coins()))
+# loop.run_until_complete(future)
+# loop.close()
+# print('interval', time.time()-t)
+# print(len(l))
+# print(l)
 
-tasks = [getpage(url, l) for url in get_coins()]
-print('start', time.time())
-loop.run_until_complete(asyncio.wait(tasks))
-loop.close()
-print('end', time.time())
+
 
 
 # https://yunbi.com/swagger/#/
