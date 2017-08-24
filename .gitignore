@@ -11,3 +11,4 @@ build
 *.e
 *.log
 *.db
+*.log.*
