@@ -8,7 +8,7 @@ from selenium import webdriver
 from selenium.webdriver import DesiredCapabilities
 import re
 import logger, requests, gevent
-from hdf5helper import hdf5helper
+from Hdf5helper import Hdf5helper
 
 logger.initialize('DEBUG', 'INFO', 'log/coin.log')
 log = logger.get_logger('alarm.py')
@@ -56,17 +56,19 @@ def getdata(coin, step=24*60*60):
     df = pd.DataFrame(result)
     df.columns = ['time', 'open', 'high', 'low', 'close', 'volume']
     df['name'] = coin
-    hdf5helper().put_df('coin', df)
+    Hdf5helper().put_df('coins/{}'.format(coin), df)
+    log.critical('insert into coins/{} {} rows'.format(coin, df.shape))
     return result
+
 t = time.time()
 tasks = []
-for url in get_coins():
+coins = get_coins()
+log.critical('get {} coins now'.format(len(coins)))
+for url in coins:
     tasks.append(gevent.spawn(getdata, url))
 
 gevent.joinall(tasks)
 print(': %s ' % (time.time()-t))
-
-
 
 # async def fetch(url, session):
 #     async with session.get(url, headers=i_headers) as response:
