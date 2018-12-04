@@ -12,3 +12,14 @@ build
 *.log
 *.db
 *.log.*
+*.png
+*.swp
+*.json
+*.h5
+
+# mac
+.DS_Store
+.idea
+*.csv
+*.vscode
+.ipynb_checkpoints
